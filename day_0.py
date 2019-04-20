@@ -1,6 +1,6 @@
 import socket
 print('当前主机名称为 : ' + socket.gethostname())
-print("当前主机的Ip地址",socket.gethostbyname(socket.gethostname()))
+print("当前主机的Ip地址", socket.gethostbyname(socket.gethostname()))
 def socket_recvfrom():
     #创建套接字
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
@@ -23,7 +23,7 @@ def socket_sendto():
                 break
             # s.sendto(b"Hello World!!!", ("192.168.81.1", 8080))
             # 给指定ip的指定端口发送数据
-            s.sendto(send_data.encode("GBK"), ("192.168.56.1", 8080))
+            s.sendto(send_data.encode("GBK"), ("192.168.137.1", 8989))
 if __name__ == "__main__":
     # socket_recvfrom()
     socket_sendto()

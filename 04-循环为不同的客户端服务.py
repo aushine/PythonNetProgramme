@@ -1,8 +1,9 @@
 import socket
+print(socket.gethostbyname(socket.gethostname()))
 def main():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as tcp_socket:
-        tcp_socket.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
-        tcp_socket.bind(("", 7692))
+        tcp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR,1)
+        tcp_socket.bind(("192.168.229.128", 7903))
         
         tcp_socket.listen(128)
         
