@@ -4,7 +4,7 @@ import socket
 import io
 import sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')
-"""模拟一个浏览器访问服务器获取服务器上的html内容
+"""模拟一个浏览器访问服务器获取服务器上的html内容,本机作为服务端
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 header
 GET / HTTP/1.1
